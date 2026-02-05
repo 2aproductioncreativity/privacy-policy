@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppression de compte - TaskGuard</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+        }
+        h1 { color: #d32f2f; font-size: 28px; border-bottom: 3px solid #d32f2f; padding-bottom: 10px; }
+        h2 { color: #2c3e50; font-size: 20px; margin-top: 30px; }
+        .warning { background: #fff3cd; padding: 15px; border-radius: 8px; border-left: 4px solid #ffc107; margin: 20px 0; }
+        .danger { background: #fde8e8; padding: 15px; border-radius: 8px; border-left: 4px solid #d32f2f; margin: 20px 0; }
+        .steps { background: #e8f0fe; padding: 15px; border-radius: 8px; margin: 20px 0; }
+        .step { margin-bottom: 15px; padding-left: 10px; }
+        .step-number { display: inline-block; width: 30px; height: 30px; background: #1a73e8; color: white; border-radius: 50%; text-align: center; line-height: 30px; font-weight: bold; margin-right: 10px; }
+        .contact { background: #e8f0fe; padding: 15px; border-radius: 8px; margin-top: 20px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+    </style>
+</head>
+<body>
+
+<h1>Suppression de compte et de données - TaskGuard</h1>
+
+<p><strong>TaskGuard</strong> vous permet de supprimer votre compte et vos données directement depuis l'application, ou en nous contactant par e-mail.</p>
+
+<h2>Option 1 : Supprimer votre compte depuis l'application</h2>
+
+<div class="steps">
+    <div class="step">
+        <span class="step-number">1</span> Ouvrez l'application TaskGuard et connectez-vous.
+    </div>
+    <div class="step">
+        <span class="step-number">2</span> Allez dans <strong>Paramètres</strong> (icône engrenage en bas de l'écran).
+    </div>
+    <div class="step">
+        <span class="step-number">3</span> Faites défiler vers le bas et appuyez sur <strong>"Supprimer mon compte"</strong>.
+    </div>
+    <div class="step">
+        <span class="step-number">4</span> Confirmez la suppression en entrant votre mot de passe (ré-authentification requise pour des raisons de sécurité).
+    </div>
+    <div class="step">
+        <span class="step-number">5</span> Votre compte et toutes vos données seront supprimés définitivement.
+    </div>
+</div>
+
+<h2>Option 2 : Supprimer vos données partiellement</h2>
+
+<p>Vous pouvez supprimer certaines données sans supprimer votre compte :</p>
+<ul>
+    <li><strong>Supprimer un profil enfant :</strong> Paramètres → sélectionner l'enfant → Supprimer</li>
+    <li><strong>Supprimer des tâches :</strong> depuis l'écran Tâches, supprimez les tâches individuellement</li>
+    <li><strong>Supprimer des récompenses :</strong> depuis l'écran Récompenses, supprimez les récompenses individuellement</li>
+    <li><strong>Supprimer le planning hebdomadaire :</strong> depuis le Planning, supprimez les tâches planifiées</li>
+    <li><strong>Supprimer un appareil enregistré :</strong> depuis l'écran Appareils, supprimez un appareil</li>
+</ul>
+
+<h2>Option 3 : Demander la suppression par e-mail</h2>
+
+<p>Si vous ne pouvez pas accéder à l'application, envoyez un e-mail à l'adresse ci-dessous avec l'objet <strong>"Suppression de compte TaskGuard"</strong> et l'adresse e-mail associée à votre compte. Nous traiterons votre demande dans un délai de 30 jours.</p>
+
+<h2>Données supprimées</h2>
+
+<div class="danger">
+    <strong>La suppression de compte est définitive et irréversible.</strong> Les données suivantes seront supprimées :
+</div>
+
+<ul>
+    <li><strong>Compte utilisateur :</strong> adresse e-mail, pseudo, nom de famille, photo de profil</li>
+    <li><strong>Données familiales :</strong> nom de famille, code d'invitation, planning hebdomadaire</li>
+    <li><strong>Profils enfants :</strong> prénoms, âges, photos de profil, points</li>
+    <li><strong>Tâches :</strong> toutes les tâches créées et l'historique des tâches complétées</li>
+    <li><strong>Récompenses :</strong> catalogue de récompenses et historique des récompenses obtenues</li>
+    <li><strong>Punitions :</strong> historique des punitions</li>
+    <li><strong>Appareils :</strong> tous les appareils enregistrés</li>
+    <li><strong>Données d'authentification :</strong> compte Firebase Authentication</li>
+</ul>
+
+<div class="warning">
+    <strong>Note :</strong> Si vous êtes le parent principal d'une famille, la suppression de votre compte entraînera la suppression de toutes les données de la famille, y compris les données des parents invités associés. Les données d'abonnement gérées par Google Play ne sont pas affectées par la suppression du compte TaskGuard. Pour annuler votre abonnement, rendez-vous dans les paramètres de votre compte Google Play.
+</div>
+
+<h2>Durée de conservation après suppression</h2>
+
+<p>Toutes les données sont supprimées définitivement de nos serveurs (Firebase) dans un délai maximum de <strong>30 jours</strong> après la demande de suppression.</p>
+
+<h2>Contact</h2>
+
+<div class="contact">
+    <p>Pour toute demande de suppression de compte ou de données :</p>
+    <p><strong>2A Production Creativity</strong><br>
+    E-mail : <a href="mailto:2aproductioncreativity@gmail.com">2aproductioncreativity@gmail.com</a></p>
+    <p>Objet : <strong>Suppression de compte TaskGuard</strong></p>
+</div>
+
+</body>
+</html>
