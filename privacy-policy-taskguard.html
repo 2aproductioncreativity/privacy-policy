@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité - TaskGuard</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            color: #333;
+            background: #f9f9f9;
+        }
+        h1 { color: #1a73e8; font-size: 28px; border-bottom: 3px solid #1a73e8; padding-bottom: 10px; }
+        h2 { color: #2c3e50; font-size: 20px; margin-top: 30px; }
+        h3 { color: #34495e; font-size: 17px; margin-top: 20px; }
+        .last-updated { color: #666; font-style: italic; margin-bottom: 30px; }
+        .contact { background: #e8f0fe; padding: 15px; border-radius: 8px; margin-top: 20px; }
+        ul { padding-left: 20px; }
+        li { margin-bottom: 8px; }
+        .highlight { background: #fff3cd; padding: 10px; border-radius: 5px; border-left: 4px solid #ffc107; margin: 15px 0; }
+    </style>
+</head>
+<body>
+
+<h1>Politique de Confidentialité - TaskGuard</h1>
+<p class="last-updated">Dernière mise à jour : 5 février 2026</p>
+
+<p>TaskGuard est une application de gestion familiale avec contrôle parental, développée par <strong>2A Production Creativity</strong>. Elle permet aux parents d'organiser les tâches de leurs enfants, de gérer un système de récompenses et de punitions, et de contrôler à distance les appareils de leurs enfants. Cette politique de confidentialité décrit comment nous collectons, utilisons et protégeons vos données.</p>
+
+<h2>1. Données collectées</h2>
+
+<h3>1.1 Données de compte parent</h3>
+<ul>
+    <li><strong>Adresse e-mail :</strong> pour la création de compte et l'authentification (Firebase Authentication).</li>
+    <li><strong>Pseudo :</strong> nom d'affichage choisi par le parent.</li>
+    <li><strong>Nom de famille :</strong> pour identifier la famille dans l'application.</li>
+    <li><strong>Mot de passe :</strong> chiffré et géré par Firebase Authentication, jamais stocké en clair.</li>
+    <li><strong>Code PIN :</strong> code d'accès rapide à l'application, stocké localement sur l'appareil.</li>
+    <li><strong>Photo de profil :</strong> image optionnelle choisie depuis la galerie ou prise par la caméra de l'appareil, stockée dans Firebase.</li>
+    <li><strong>Rôle :</strong> parent principal ou parent invité (système multi-parents).</li>
+</ul>
+
+<h3>1.2 Données des enfants</h3>
+<div class="highlight">
+    <strong>Important :</strong> Les profils enfants sont créés et gérés exclusivement par les parents. Les enfants ne créent pas de compte et ne fournissent aucune donnée personnelle directement.
+</div>
+<ul>
+    <li><strong>Prénom :</strong> de l'enfant, saisi par le parent.</li>
+    <li><strong>Âge :</strong> de l'enfant, saisi par le parent.</li>
+    <li><strong>Photo de profil :</strong> image optionnelle choisie par le parent.</li>
+    <li><strong>Points :</strong> total de points accumulés par l'enfant.</li>
+    <li><strong>Tâches complétées :</strong> historique des tâches validées avec horodatage.</li>
+    <li><strong>Récompenses obtenues :</strong> historique des récompenses demandées et obtenues.</li>
+    <li><strong>Punitions :</strong> historique des punitions (raison, durée, points retirés).</li>
+    <li><strong>Statut de blocage :</strong> indique si l'appareil de l'enfant est actuellement bloqué.</li>
+</ul>
+
+<h3>1.3 Données familiales</h3>
+<ul>
+    <li><strong>Nom de famille :</strong> identifiant du groupe familial.</li>
+    <li><strong>Code d'invitation :</strong> code généré pour inviter un second parent à rejoindre la famille.</li>
+    <li><strong>Planning hebdomadaire :</strong> tâches planifiées par jour et par moment (matin, midi, soir).</li>
+    <li><strong>Catalogue de tâches :</strong> liste des tâches créées par les parents avec titres, descriptions et points.</li>
+    <li><strong>Catalogue de récompenses :</strong> liste des récompenses avec titres et coûts en points.</li>
+</ul>
+
+<h3>1.4 Données d'appareil</h3>
+<ul>
+    <li><strong>Identifiant d'appareil :</strong> adresse MAC ou identifiant unique, pour enregistrer les appareils enfants et permettre le contrôle parental à distance.</li>
+    <li><strong>Nom de l'appareil :</strong> pour identifier l'appareil dans la liste des appareils gérés.</li>
+    <li><strong>Signal de présence (heartbeat) :</strong> signal envoyé toutes les 30 secondes par les appareils enfants bloqués, permettant aux parents de savoir si l'appareil est en ligne.</li>
+</ul>
+
+<h3>1.5 Données d'abonnement</h3>
+<ul>
+    <li><strong>Statut d'abonnement :</strong> actif, essai gratuit ou expiré. Géré par Google Play Billing.</li>
+    <li><strong>Nous ne stockons aucune information de paiement</strong> (carte bancaire, IBAN, etc.). Tous les paiements sont traités directement par Google Play.</li>
+</ul>
+
+<h2>2. Comment nous utilisons vos données</h2>
+<p>Vos données sont utilisées exclusivement pour :</p>
+<ul>
+    <li>Fournir le service TaskGuard : gestion des tâches, récompenses, punitions et planning familial.</li>
+    <li>Synchroniser les données en temps réel entre tous les appareils de la famille (parents et enfants).</li>
+    <li>Authentifier les utilisateurs et sécuriser l'accès aux comptes.</li>
+    <li>Permettre le contrôle parental : blocage d'appareil à distance, surveillance du statut en ligne.</li>
+    <li>Envoyer des e-mails de service (bienvenue, vérification, réinitialisation de mot de passe) via Firebase Cloud Functions.</li>
+    <li>Gérer les abonnements et l'accès aux fonctionnalités.</li>
+    <li>Afficher les classements et statistiques au sein de la famille.</li>
+</ul>
+
+<h2>3. Stockage et sécurité des données</h2>
+<ul>
+    <li>Les données sont stockées sur <strong>Firebase Realtime Database</strong> (Google Cloud Platform), avec chiffrement en transit (TLS) et au repos.</li>
+    <li>Les mots de passe sont gérés par <strong>Firebase Authentication</strong> et ne sont jamais accessibles en clair.</li>
+    <li>Les codes PIN sont stockés localement sur l'appareil et ne sont pas transmis à nos serveurs.</li>
+    <li>Des <strong>règles de sécurité Firebase</strong> garantissent que seuls les membres autorisés d'une famille peuvent accéder à ses données.</li>
+    <li>Les photos de profil sont stockées dans <strong>Firebase Storage</strong> avec des règles d'accès restreintes.</li>
+    <li>La vérification d'e-mail est requise pour activer un compte.</li>
+    <li>La suppression de compte nécessite une ré-authentification par mot de passe pour des raisons de sécurité.</li>
+</ul>
+
+<h2>4. Partage des données</h2>
+<p><strong>Nous ne vendons, ne louons et ne partageons vos données personnelles avec aucun tiers.</strong></p>
+<p>Les seuls services tiers impliqués sont :</p>
+<ul>
+    <li><strong>Firebase / Google Cloud Platform :</strong> hébergement, authentification, base de données temps réel et stockage de fichiers.</li>
+    <li><strong>Google Play Billing :</strong> traitement des abonnements. Google gère directement les paiements.</li>
+    <li><strong>Firebase Cloud Functions :</strong> envoi d'e-mails de service (hébergé sur Google Cloud).</li>
+</ul>
+<p><strong>Aucune publicité n'est affichée dans TaskGuard. Aucun SDK publicitaire n'est intégré. Aucune donnée n'est partagée à des fins publicitaires.</strong></p>
+
+<h2>5. Protection des données des enfants</h2>
+<div class="highlight">
+    <strong>TaskGuard respecte le RGPD et le COPPA (Children's Online Privacy Protection Act).</strong>
+</div>
+<ul>
+    <li>Les profils enfants sont créés et gérés <strong>exclusivement par les parents</strong>.</li>
+    <li>Les enfants <strong>ne créent pas de compte</strong>, ne fournissent pas d'adresse e-mail et ne saisissent aucune donnée personnelle.</li>
+    <li>Les enfants accèdent à l'application via un code PIN défini par le parent.</li>
+    <li>L'interface enfant est limitée : consultation des tâches, récompenses, punitions et classement uniquement.</li>
+    <li>Les parents peuvent à tout moment <strong>modifier ou supprimer</strong> les données de leurs enfants.</li>
+    <li>Aucune publicité n'est affichée aux enfants.</li>
+    <li>Aucune donnée de localisation des enfants n'est collectée.</li>
+</ul>
+
+<h2>6. Contrôle parental et données d'appareil</h2>
+<p>La fonctionnalité de contrôle parental permet aux parents de :</p>
+<ul>
+    <li>Bloquer temporairement l'appareil d'un enfant à distance (mode kiosque).</li>
+    <li>Surveiller si l'appareil de l'enfant est en ligne (via le système de heartbeat).</li>
+    <li>Recevoir une alerte si l'appareil d'un enfant bloqué est hors ligne depuis plus de 90 secondes.</li>
+</ul>
+<p>Le mode de blocage utilise le mode immersif Android et empêche l'enfant de quitter l'application. <strong>Aucune donnée de navigation internet, de localisation GPS ou d'utilisation d'autres applications n'est collectée.</strong></p>
+
+<h2>7. Notifications et e-mails</h2>
+<ul>
+    <li><strong>E-mail de bienvenue :</strong> envoyé automatiquement à la création du compte.</li>
+    <li><strong>E-mail de vérification :</strong> envoyé pour confirmer l'adresse e-mail.</li>
+    <li><strong>E-mail de réinitialisation :</strong> envoyé sur demande en cas de mot de passe oublié.</li>
+    <li>Aucun e-mail marketing ou promotionnel n'est envoyé.</li>
+</ul>
+
+<h2>8. Vos droits (RGPD)</h2>
+<p>Conformément au Règlement Général sur la Protection des Données, vous disposez des droits suivants :</p>
+<ul>
+    <li><strong>Droit d'accès :</strong> consultez vos données à tout moment dans l'application.</li>
+    <li><strong>Droit de rectification :</strong> modifiez vos informations (pseudo, nom, photos) dans les paramètres.</li>
+    <li><strong>Droit de suppression :</strong> supprimez votre compte et toutes les données associées depuis les paramètres de l'application. La suppression est définitive.</li>
+    <li><strong>Droit de portabilité :</strong> demandez une copie de vos données par e-mail à l'adresse ci-dessous.</li>
+    <li><strong>Droit d'opposition :</strong> vous pouvez vous opposer au traitement de vos données en supprimant votre compte.</li>
+</ul>
+
+<h2>9. Durée de conservation</h2>
+<ul>
+    <li>Vos données sont conservées tant que votre compte est actif.</li>
+    <li>En cas de suppression de compte, toutes les données (profil, famille, enfants, tâches, récompenses, punitions, photos, appareils) sont supprimées définitivement de nos serveurs dans un délai de 30 jours maximum.</li>
+    <li>En cas d'expiration de l'abonnement sans renouvellement, les données sont conservées pendant 90 jours puis supprimées automatiquement.</li>
+</ul>
+
+<h2>10. Modifications de cette politique</h2>
+<p>Nous pouvons mettre à jour cette politique de confidentialité. Les modifications seront publiées sur cette page avec la date de mise à jour. En cas de changement significatif, une notification sera affichée dans l'application.</p>
+
+<h2>11. Contact</h2>
+<div class="contact">
+    <p>Pour toute question concernant cette politique de confidentialité, vos données personnelles ou pour exercer vos droits :</p>
+    <p><strong>2A Production Creativity</strong><br>
+    E-mail : <a href="mailto:2aproductioncreativity@gmail.com">2aproductioncreativity@gmail.com</a></p>
+    <p>Nous nous engageons à répondre à toute demande dans un délai de 30 jours.</p>
+</div>
+
+</body>
+</html>
